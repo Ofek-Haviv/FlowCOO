@@ -9,7 +9,7 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "prisma:generate": "cd .. && npx prisma generate && cp -r ../generated/prisma ./node_modules/.prisma/client",
-    "build": "prisma generate --schema=../prisma/schema.prisma"
+    "build": "prisma generate --schema=prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
