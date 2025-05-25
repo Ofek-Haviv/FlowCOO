@@ -17,7 +17,7 @@ Thumbs.db
 *.log
 
 # Prisma local database
-prisma/dev.db
+apps/backend/prisma/dev.db
 *.sqlite
 *.db
 
@@ -37,4 +37,6 @@ yarn-error.log*
 .vscode/
 .idea/
 
+# Legacy/Generated
+supabase/
 generated/
