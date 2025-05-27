@@ -3,8 +3,7 @@ import { Project } from "@/components/ProjectCard";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { ProjectTask } from "@/components/ProjectCard";
-
-const API_URL = 'http://localhost:4000';
+import { API_URL } from "@/config";
 
 export const useProjects = (userId: string) => {
   const [projects, setProjects] = useState<Project[]>([]);

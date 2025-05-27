@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Metric } from '@/components/MetricCard';
-
-const API_URL = 'http://localhost:4000';
+import { API_URL } from '@/config';
 
 export const useMetrics = (userId: string) => {
   const [metrics, setMetrics] = useState<Metric[]>([]);
