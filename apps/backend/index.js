@@ -11,13 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const prisma = new PrismaClient({
-  datasources: {
-    db: {
-      url: `file:${path.join(__dirname, '..', 'prisma', 'dev.db')}`
-    }
-  }
-});
+const prisma = new PrismaClient();
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
 // Basic error handling
